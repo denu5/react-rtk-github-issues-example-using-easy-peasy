@@ -5,3 +5,24 @@ In order to understand the differences between [Redux Toolkit](https://github.co
 (rtk guys, sorry for stealing your app!)
 
 [View in codesandbox](https://codesandbox.io/s/github/denu5/react-rtk-github-issues-example-using-easy-peasy)
+
+### React Codebase Source Overview
+
+The codebase is already laid out in a "feature folder" structure, The main pieces are:
+
+The original project structure from the rtk example:
+
+- `/api`: fetching functions and TS types for the Github Issues API
+- `/app`: main `<App>` component
+- `/components`: components that are reused in multiple places
+- `/features`
+  - `/issueDetails:` components for the Issue Details page
+  - `/issuesList`: components for the Issues List display
+  - `/repoSearch`: components for the Repo Search form
+- `/utils`: various string utility functions
+
+Additional folders for easy-peasy:
+
+- `/model`: easy-peasy store models
+- `/store`: easy-peasy store config and typed hooks
+- `/services`: services that can be used with easy-peasy injector
